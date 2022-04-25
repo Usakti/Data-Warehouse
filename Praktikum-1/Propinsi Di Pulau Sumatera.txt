@@ -1,0 +1,11 @@
+Propinsi;Ibu Kota;Populasi
+Aceh                     ;Banda Aceh    ;223446
+Sumatera Utara           ;Medan         ;2097610
+Sumatera Barat           ;Padang        ;833562
+Riau                     ;Pekanbaru     ;897767
+Jambi                    ;Jambi         ;531857
+Sumatera Selatan         ;Palembang     ;1455284
+Bengkulu                 ;Bengkulu      ;308544
+Lampung                  ;Bandar Lampung;881801
+Kepulauan Bangka Belitung;Pangkal Pinang;174000
+Kepulauan Riau           ;Tanjung Pinang;192493
