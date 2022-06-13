@@ -1,0 +1,7 @@
+Propinsi       Ibu Kota      Populasi
+Jakarta        Jakarta       8839247 
+Yogyakarta     Yogyakarta    511744  
+Jawa Barat     Bandung       2288570 
+Jawa Tengah    Semarang      1352869 
+Jawa Timur     Surabaya      2611506 
+Banten         Serang        501562  

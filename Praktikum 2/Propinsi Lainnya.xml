@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<row>
+		<propinsi>Bali</propinsi>
+		<ibukota>Denpasar</ibukota>
+		<populasi>491500</populasi>
+	</row>
+	<row>
+		<propinsi>Nusa Tenggara Barat</propinsi>
+		<ibukota>Mataram</ibukota>
+		<populasi>356141</populasi>
+	</row>
+	<row>
+		<propinsi>Nusa Tenggara Timur</propinsi>
+		<ibukota>Kupang</ibukota>
+		<populasi>269680</populasi>
+	</row>
+	<row>
+		<propinsi>Maluku</propinsi>
+		<ibukota>Ambon</ibukota>
+		<populasi>428585</populasi>
+	</row>
+	<row>
+		<propinsi>Maluku Utara</propinsi>
+		<ibukota>Sofifi</ibukota>
+		<populasi>163467</populasi>
+	</row>
+	<row>
+		<propinsi>Papua</propinsi>
+		<ibukota>Jayapura</ibukota>
+		<populasi>197396</populasi>
+	</row>
+	<row>
+		<propinsi>Papua Barat</propinsi>
+		<ibukota>Manokwari</ibukota>
+		<populasi>207398</populasi>
+	</row>
+</data>

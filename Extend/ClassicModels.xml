@@ -1,0 +1,58 @@
+<Schema name="Classic Models">
+  <Dimension type="TimeDimension" visible="true" name="Time">
+    <Hierarchy name="Date" visible="true" hasAll="true" allMemberName="allDates" primaryKey="sk">
+      <Table name="dim_date" alias="">
+      </Table>
+      <Level name="Year" visible="true" table="dim_date" column="year" type="String" uniqueMembers="false" levelType="TimeYears">
+      </Level>
+      <Level name="Quarter" visible="true" table="dim_date" column="quarter" type="String" uniqueMembers="false" levelType="TimeQuarters">
+      </Level>
+      <Level name="Month" visible="true" table="dim_date" column="month_name" ordinalColumn="month" type="String" uniqueMembers="false" levelType="TimeMonths">
+      </Level>
+      <Level name="Day" visible="true" table="dim_date" column="day" type="String" uniqueMembers="false" levelType="TimeDays">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Product">
+    <Hierarchy name="Product" visible="true" hasAll="true" allMemberName="allProducts" primaryKey="sk">
+      <Table name="dim_product" alias="">
+      </Table>
+      <Level name="ProductLine" visible="true" table="dim_product" column="product_line" type="String" uniqueMembers="false">
+      </Level>
+      <Level name="ProductName" visible="true" table="dim_product" column="product_name" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Employee">
+    <Hierarchy name="Employee" visible="true" hasAll="true" allMemberName="allEmployee" primaryKey="sk">
+      <Table name="dim_employee" alias="">
+      </Table>
+      <Level name="EmployeeName" visible="true" table="dim_employee" column="employee_name" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Customer">
+    <Hierarchy name="Customer" visible="true" hasAll="true" allMemberName="allEmployee" primaryKey="sk">
+      <Table name="dim_customer" alias="">
+      </Table>
+      <Level name="CustomerName" visible="true" table="dim_customer" column="customer_name" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="ClassicModels" visible="true" cache="true" enabled="true">
+    <Table name="fact_order" alias="">
+    </Table>
+    <DimensionUsage source="Time" name="Time" visible="true" foreignKey="order_date_sk">
+    </DimensionUsage>
+    <DimensionUsage source="Product" name="Product" visible="true" foreignKey="product_sk">
+    </DimensionUsage>
+    <DimensionUsage source="Employee" name="Employee" visible="true" foreignKey="employee_sk">
+    </DimensionUsage>
+    <DimensionUsage source="Customer" name="Customer" visible="true" foreignKey="customer_sk">
+    </DimensionUsage>
+    <Measure name="Quantity" column="quantity_ordered" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total" column="price_total" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
